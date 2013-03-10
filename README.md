@@ -5,6 +5,9 @@ jquery-insight
 
 Determine whether any of the matched elements are located within the browser's viewport.
 
+## Demo
+http://thomasrstegelmann.github.com/jquery.insight.html
+
 ## Code Example
 
 ```html
