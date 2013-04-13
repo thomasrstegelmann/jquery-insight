@@ -28,6 +28,7 @@
     "homepage": "https://github.com/thomasrstegelmann/jquery-insight",
     "docs": "https://github.com/thomasrstegelmann/jquery-insight",
     "download": "https://raw.github.com/thomasrstegelmann/jquery-insight/master/jquery.insight.js",
+    "demo": "http://thomasrstegelmann.github.io/jquery.insight.html",
     "dependencies": {
         "jquery": ">=1.5"
     }
