@@ -1,12 +1,12 @@
 {
     "name": "insight",
     "title": "jQuery .inSight()",
-    "description": "Determine whether any of the matched elements are located within the browser's viewport.",
+    "description": "Plugins checks if an element is within the browser's view port and not hidden using css",
     "keywords": [
         "viewport",
         "scroll"
     ],
-    "version": "0.1.0",
+    "version": "0.0.1",
     "author": {
         "name": "jQuery Foundation and other contributors",
         "url": "https://github.com/jquery/jquery-color/blob/2.1.2/AUTHORS.txt"
