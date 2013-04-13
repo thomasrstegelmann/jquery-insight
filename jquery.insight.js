@@ -1,16 +1,20 @@
 $.fn.extend({
-    inSight: function (senstitivity) {  		
-		var senstitivity = senstitivity || 0,
-			viewportTop = $(window).scrollTop() - senstitivity,
-			viewportBottom = ($(window).height() + $(window).scrollTop() + senstitivity),
-			i = 0,
-			l = this.length;
+	inSight: function (senstitivity) {  		
+		var w = $(window),
+		s = senstitivity || 0,
+		viewportTop = w.scrollTop() - s,
+		viewportBottom = (w.height() + w.scrollTop() + s),
+		viewportLeft = w.scrollLeft() - s,
+		viewportRight = (w.width() + w.scrollLeft() + s),				
+		i = 0,
+		l = this.length;
 		for ( ; i < l; i++ ) {
-			if ( ($(this[i]).offset().top <  viewportBottom) && ($(this[i]).offset().top + $(this[i]).height() > viewportTop) ) {
-				return true;
+			var e = $(this[i]);
+			if ( (e.offset().top <  viewportBottom) && (e.offset().top + e.height() > viewportTop) && (e.offset().left <  viewportRight) && (e.offset().left + e.width() > viewportLeft) && (e.css('display') != 'none')  && (e.css('visibility') != 'hidden') && (e.css('opacity') != '0') ) {
+				return true; 
 			}
 		}		
-	
-    return false;
-  }
+
+		return false;
+	}
 });
